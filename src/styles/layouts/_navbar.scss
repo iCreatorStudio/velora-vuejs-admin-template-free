@@ -1,0 +1,23 @@
+.layout-navbar {
+  backdrop-filter: blur(6px);
+  background-color: rgba(var(--v-theme-background), 0.9) !important;
+
+  .v-toolbar__content {
+    padding-inline: 1.25rem !important;
+
+    .navbar-wrapper {
+      position: relative;
+      display: flex;
+      flex: 0 0 auto;
+      align-items: center;
+      inline-size: 100%;
+      transition: inherit;
+    }
+  }
+}
+
+.v-theme-skins-classic {
+  .layout-navbar {
+    box-shadow: none !important;
+  }
+}

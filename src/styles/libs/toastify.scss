@@ -1,0 +1,22 @@
+@use "@styles/mixin/mixin";
+
+:root {
+  --toastify-color-light: rgb(var(--v-theme-surface));
+  --toastify-color-dark: rgb(var(--v-theme-surface));
+  --toastify-color-info: rgb(var(--v-theme-info));
+  --toastify-color-success: rgb(var(--v-theme-success));
+  --toastify-color-warning: rgb(var(--v-theme-warning));
+  --toastify-color-error: rgb(var(--v-theme-error));
+  --toastify-color-transparent: rgba(var(--v-theme-surface), 70%);
+  --toastify-font-family: "Public Sans", sans-serif;
+  --toastify-text-color-light: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+  --toastify-text-color-dark: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+}
+
+.Toastify__toast {
+  @include mixin.elevation(16);
+}
+
+.Toastify__close-button--light {
+  color: var(--toastify-text-color-light);
+}

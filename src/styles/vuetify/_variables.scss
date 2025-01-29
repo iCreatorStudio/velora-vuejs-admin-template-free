@@ -1,0 +1,252 @@
+$shadow-key-umbra-opacity-custom: var(--v-shadow-key-umbra-opacity);
+$shadow-key-penumbra-opacity-custom: var(--v-shadow-key-penumbra-opacity);
+$shadow-key-ambient-opacity-custom: var(--v-shadow-key-ambient-opacity);
+$card-transition-property-custom: box-shadow, opacity;
+$font-family-custom: "Inter",sans-serif,-apple-system,blinkmacsystemfont,
+  "Segoe UI",roboto,"Helvetica Neue",arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+@forward "vuetify/settings" with (
+  $body-font-family: $font-family-custom !default,
+  $border-radius-root: 8px !default,
+
+  /* Global border radius */
+  $rounded: (
+    "sm": 4px,
+    "lg": 16px,
+    "shaped": 18px 0,
+  ) !default,
+
+  /* container */
+  $container-max-widths:(
+    "md":null,
+    "lg": 1440px,
+    "xl": 1440px,
+    "xxl": 1440px,
+  ),
+
+  /* Alert */
+  $alert-density: ("default": -0.5, "comfortable": -1, "compact": -2) !default,
+
+  /* btn */
+  $button-card-actions-padding: 0 12px !default,
+  $button-padding-ratio: 2 !default,
+  $button-card-actions-margin: 0 !default,
+  $button-density: ("default": 0, "comfortable": -1, "compact": -2) !default,
+  $button-font-weight: 500 !default,
+
+  /* card */
+  $card-border-radius: 10px !default,
+  $card-text-padding: 1.25rem !default,
+  $card-item-padding: 1.25rem !default,
+  $card-elevation: 2 !default,
+  $card-transition-property: $card-transition-property-custom !default,
+  $sheet-border-radius: 10px !default,
+
+  /* chip */
+  $chip-label-border-radius: 4px !default,
+  $chip-height: 30px !default,
+
+  /* dialog */
+  $dialog-card-header-padding: 1.25rem 1.25rem 0 !default,
+  $dialog-card-header-text-padding-top: 1.25rem !default,
+  $dialog-card-text-padding: 1.25rem !default,
+
+  /* Expansion Panel */
+  $expansion-panel-active-title-min-height: 48px !default,
+
+  /* list */
+  $list-item-prepend-size: 4px !default,
+  $list-item-icon-margin-end: 14px !default,
+  $list-item-icon-margin-start: 14px !default,
+  $list-item-icon-opacity: var(--v-high-emphasis-opacity) !default,
+
+  /* label */
+  $label-font-size: 0.875rem !default,
+
+  /* input */
+  $field-outline-opacity: 0.22 !default,
+
+  /* updated shadows */
+  $shadow-key-umbra: (
+    0: (0 0 0 0 var(--v-shadow-key-umbra-opacity)),
+    1: (0 2px 1px -1px var(--v-shadow-key-umbra-opacity)),
+    2: (0 3px 1px -2px var(--v-shadow-key-umbra-opacity)),
+    3: (0 3px 3px -2px var(--v-shadow-key-umbra-opacity)),
+    4: (0 2px 4px -1px var(--v-shadow-key-umbra-opacity)),
+    5: (0 3px 5px -1px var(--v-shadow-key-umbra-opacity)),
+    6: (0 3px 5px -1px  var(--v-shadow-key-umbra-opacity)),
+    7: (0 4px 5px -2px var(--v-shadow-key-umbra-opacity)),
+    8: (0 5px 5px -3px var(--v-shadow-key-umbra-opacity)),
+    9: (0 5px 6px -3px var(--v-shadow-key-umbra-opacity)),
+    10: (0 6px 6px -3px var(--v-shadow-key-umbra-opacity)),
+    11: (0 6px 7px -4px var(--v-shadow-key-umbra-opacity)),
+    12: (0 7px 8px -4px var(--v-shadow-key-umbra-opacity)),
+    13: (0 7px 8px -4px var(--v-shadow-key-umbra-opacity)),
+    14: (0 7px 9px -4px var(--v-shadow-key-umbra-opacity)),
+    15: (0 8px 9px -5px var(--v-shadow-key-umbra-opacity)),
+    16: (0 8px 10px -5px var(--v-shadow-key-umbra-opacity)),
+    17: (0 8px 11px -5px var(--v-shadow-key-umbra-opacity)),
+    18: (0 9px 11px -5px var(--v-shadow-key-umbra-opacity)),
+    19: (0 9px 12px -6px var(--v-shadow-key-umbra-opacity)),
+    20: (0 10px 13px -6px var(--v-shadow-key-umbra-opacity)),
+    21: (0 10px 13px -6px var(--v-shadow-key-umbra-opacity)),
+    22: (0 10px 14px -6px var(--v-shadow-key-umbra-opacity)),
+    23: (0 11px 14px -7px var(--v-shadow-key-umbra-opacity)),
+    24: (0 11px 15px -7px var(--v-shadow-key-umbra-opacity))
+  ) !default,
+
+  $shadow-key-penumbra: (
+    0: (0 0 0 0 $shadow-key-penumbra-opacity-custom),
+    1: (0 1px 1px 0 $shadow-key-penumbra-opacity-custom),
+    2: (0 2px 2px 0 $shadow-key-penumbra-opacity-custom),
+    3: (0 3px 4px 1px $shadow-key-penumbra-opacity-custom),
+
+    4: (0 4px 5px 0 $shadow-key-penumbra-opacity-custom),
+    5: (0 5px 8px 0 $shadow-key-penumbra-opacity-custom),
+    6: (0 6px 10px 0 $shadow-key-penumbra-opacity-custom),
+
+    7: (0 7px 10px 1px $shadow-key-penumbra-opacity-custom),
+    8: (0 8px 10px 1px $shadow-key-penumbra-opacity-custom),
+    9: (0 9px 12px 1px $shadow-key-penumbra-opacity-custom),
+    10: (0 10px 14px 1px $shadow-key-penumbra-opacity-custom),
+    11: (0 11px 15px 1px $shadow-key-penumbra-opacity-custom),
+    12: (0 12px 17px 2px $shadow-key-penumbra-opacity-custom),
+    13: (0 13px 19px 2px $shadow-key-penumbra-opacity-custom),
+    14: (0 14px 21px 2px $shadow-key-penumbra-opacity-custom),
+    15: (0 15px 22px 2px $shadow-key-penumbra-opacity-custom),
+    16: (0 16px 24px 2px $shadow-key-penumbra-opacity-custom),
+    17: (0 17px 26px 2px $shadow-key-penumbra-opacity-custom),
+    18: (0 18px 28px 2px $shadow-key-penumbra-opacity-custom),
+    19: (0 19px 29px 2px $shadow-key-penumbra-opacity-custom),
+    20: (0 20px 31px 3px $shadow-key-penumbra-opacity-custom),
+    21: (0 21px 33px 3px $shadow-key-penumbra-opacity-custom),
+    22: (0 22px 35px 3px $shadow-key-penumbra-opacity-custom),
+    23: (0 23px 36px 3px $shadow-key-penumbra-opacity-custom),
+    24: (0 24px 38px 3px $shadow-key-penumbra-opacity-custom)
+  ) !default,
+
+  $shadow-key-ambient: (
+    0: (0 0 0 0 $shadow-key-ambient-opacity-custom),
+    1: (0 1px 3px 0 $shadow-key-ambient-opacity-custom),
+    2: (0 1px 5px 0 $shadow-key-ambient-opacity-custom),
+    3: (0 1px 8px 0 $shadow-key-ambient-opacity-custom),
+
+    4: (0 1px 10px 0 $shadow-key-ambient-opacity-custom),
+    5: (0 1px 14px 0 $shadow-key-ambient-opacity-custom),
+    6: (0 1px 18px 0 $shadow-key-ambient-opacity-custom),
+
+    7: (0 2px 16px 1px $shadow-key-ambient-opacity-custom),
+    8: (0 3px 14px 2px $shadow-key-ambient-opacity-custom),
+    9: (0 3px 16px 2px $shadow-key-ambient-opacity-custom),
+    10: (0 4px 18px 3px $shadow-key-ambient-opacity-custom),
+    11: (0 4px 20px 3px $shadow-key-ambient-opacity-custom),
+    12: (0 5px 22px 4px $shadow-key-ambient-opacity-custom),
+    13: (0 5px 24px 4px $shadow-key-ambient-opacity-custom),
+    14: (0 5px 26px 4px $shadow-key-ambient-opacity-custom),
+    15: (0 6px 28px 5px $shadow-key-ambient-opacity-custom),
+    16: (0 6px 30px 5px $shadow-key-ambient-opacity-custom),
+    17: (0 6px 32px 5px $shadow-key-ambient-opacity-custom),
+    18: (0 7px 34px 6px $shadow-key-ambient-opacity-custom),
+    19: (0 7px 36px 6px $shadow-key-ambient-opacity-custom),
+    20: (0 8px 38px 7px $shadow-key-ambient-opacity-custom),
+    21: (0 8px 40px 7px $shadow-key-ambient-opacity-custom),
+    22: (0 8px 42px 7px $shadow-key-ambient-opacity-custom),
+    23: (0 9px 44px 8px $shadow-key-ambient-opacity-custom),
+    24: (0 9px 46px 8px $shadow-key-ambient-opacity-custom)
+  ) !default,
+
+  /* 👉 Typography */
+  $typography: (
+    "h1": (
+      "size": 4rem,
+      "weight": 800,
+      "line-height": 5rem,
+      "letter-spacing": normal
+    ),
+    "h2": (
+      "size": 3rem,
+      "weight": 800,
+      "line-height": 4rem,
+      "letter-spacing": normal
+    ),
+    "h3": (
+      "size": 2rem,
+      "weight": 700,
+      "line-height": 3rem,
+    ),
+    "h4": (
+      "size": 1.5rem,
+      "weight": 700,
+      "line-height": 2.25rem,
+      "letter-spacing": normal
+    ),
+    "h5": (
+      "size": 1.25rem,
+      "weight": 700,
+      "line-height": 1.875rem
+    ),
+    "h6":(
+      "size": 1.125rem,
+      "line-height": 1.75rem,
+      "letter-spacing": normal
+    ),
+    "body-1":(
+      "size": 1rem,
+      "line-height": 1.5rem,
+      "weight": 400,
+      "letter-spacing": normal
+    ),
+    "body-2": (
+      "size": 0.875rem,
+      "line-height": 1.375rem,
+      "weight": 400,
+      "letter-spacing": normal
+    ),
+    "subtitle-1": (
+      "size": 1rem,
+      "line-height": 1.5rem,
+      "weight": 600,
+      "letter-spacing": 0
+    ),
+    "subtitle-2": (
+      "size": 0.875rem,
+      "weight": 600,
+      "line-height": 1.375rem,
+      "letter-spacing": 0
+    ),
+    "button": (
+      "size": 0.875rem,
+      "weight": 700,
+      "line-height": 1.5rem,
+      "letter-spacing": normal,
+      "text-transform": capitalize
+    ),
+    "caption":(
+      "size": 0.75rem,
+      "line-height": 1.125rem,
+      "weight": 400,
+      "letter-spacing": normal
+    ),
+    "overline": (
+      "size": 0.75rem,
+      "line-height": 1.125rem,
+      "weight": 700,
+      "letter-spacing": 0,
+    )
+  ) !default,
+
+  /* snackbar */
+  $snackbar-background: rgba(var(--v-theme-surface), 0.9) !default,
+  $snackbar-color: rgb(var(--v-theme-on-surface)) !default,
+  $snackbar-elevation: 2 !default,
+
+  /* tooltip */
+  $tooltip-background-color: #000 !default,
+  $tooltip-text-color: #fff !default,
+
+  /* datatable */
+  $data-table-footer-padding: 8px 16px !default,
+
+  /* table */
+  $table-transition-property: box-shadow,
+)

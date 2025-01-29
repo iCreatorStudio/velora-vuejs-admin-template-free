@@ -1,0 +1,12 @@
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.auth-wrapper-v2 {
+  min-block-size: 100dvh;
+}

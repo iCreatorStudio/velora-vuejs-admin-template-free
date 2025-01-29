@@ -1,0 +1,89 @@
+@use "@vuepic/vue-datepicker/dist/main.css";
+@use "@styles/mixin/mixin";
+
+.dp__theme_dark {
+  --dp-background-color: rgb(var(--v-theme-surface));
+  --dp-text-color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+  --dp-hover-color: rgba(var(--v-theme-on-surface), var(--v-hover-opacity));
+  --dp-hover-text-color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+  --dp-hover-icon-color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+  --dp-primary-color: rgb(var(--v-theme-primary));
+  --dp-primary-text-color: rgb(var(--v-theme-on-primary));
+  --dp-secondary-color: rgba(var(--v-theme-on-surface), var(--v-disabled-opacity));
+  --dp-border-color: rgba(var(--v-theme-on-surface), 0.22);
+  --dp-menu-border-color: rgba(var(--v-border-color), var(--v-border-opacity));
+  --dp-border-color-hover: rgba(var(--v-theme-on-surface), 0.6);
+  --dp-disabled-color: rgba(var(--v-theme-on-surface), var(--v-disabled-opacity));
+  --dp-scroll-bar-background: rgb(var(--v-theme-surface));
+  --dp-scroll-bar-color: rgb(var(--v-theme-background));
+  --dp-success-color: rgb(var(--v-theme-success));
+  --dp-success-color-disabled: rgba(var(--v-theme-primary), var(--v-disabled-opacity));
+  --dp-icon-color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+  --dp-danger-color: rgb(var(--v-theme-error));
+  --dp-highlight-color: rgba(var(--v-theme-primary), 20%);
+}
+
+.dp__theme_light {
+  --dp-background-color: rgb(var(--v-theme-surface));
+  --dp-text-color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+  --dp-hover-color: rgba(var(--v-theme-on-surface), var(--v-hover-opacity));
+  --dp-hover-text-color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+  --dp-hover-icon-color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+  --dp-primary-color: rgb(var(--v-theme-primary));
+  --dp-primary-text-color: rgb(var(--v-theme-on-primary));
+  --dp-secondary-color: rgba(var(--v-theme-on-surface), var(--v-disabled-opacity));
+  --dp-border-color: rgba(var(--v-theme-on-surface), 0.22);
+  --dp-menu-border-color: rgba(var(--v-border-color), var(--v-border-opacity));
+  --dp-border-color-hover: rgba(var(--v-theme-on-surface), 0.6);
+  --dp-scroll-bar-background: rgb(var(--v-theme-surface));
+  --dp-scroll-bar-color: rgb(var(--v-theme-surface-variant));
+  --dp-success-color: rgb(var(--v-theme-success));
+  --dp-success-color-disabled: rgba(var(--v-theme-primary), var(--v-disabled-opacity));
+  --dp-icon-color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity));
+  --dp-danger-color: rgb(var(--v-theme-error));
+  --dp-highlight-color: rgba(var(--v-theme-primary), 20%);
+}
+
+:root {
+  --dp-border-radius: 8px;
+  --dp-cell-border-radius: 8px;
+  --dp-input-padding: 7px 30px 7px 16px;
+  --dp-action-button-height: 36px;
+}
+
+.dp__month_year_row {
+  margin-block-start: 0.125rem;
+}
+
+.dp__menu {
+  @include mixin.elevation(8);
+
+  border: none !important;
+}
+
+.dp__action_button {
+  margin-inline-start: 0.375rem;
+  padding-inline: 0.625rem;
+}
+
+.dp--year-mode-picker {
+  padding-inline: 0.625rem;
+}
+
+.dp__disabled.dp__input_readonly.dp__input {
+  background: none;
+  opacity: var(--v-disabled-opacity);
+
+  + div > .dp__icon {
+    opacity: var(--v-disabled-opacity);
+  }
+}
+
+.dp__calendar_header_separator {
+  background-color: transparent;
+}
+
+.dp__calendar_header_item {
+  font-size: 14px;
+  font-weight: 500;
+}

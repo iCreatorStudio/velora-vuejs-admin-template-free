@@ -1,0 +1,326 @@
+@use "@styles/mixin/mixin.scss" as elevation;
+
+.v-theme-skins-default {
+  p {
+    margin-block-end: 1rem;
+  }
+
+  .v-code {
+    --v-theme-code: transparent;
+    --v-theme-on-code: 255, 86, 48;
+
+    display: inline-block;
+    font-style: italic;
+    font-weight: 500 !important;
+  }
+
+  // avatar group
+  .v-avatar-group {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    -webkit-box-pack: end;
+
+    .v-avatar {
+      box-sizing: content-box;
+      border: 2px solid rgb(var(--v-theme-surface));
+      margin-inline-start: -8px;
+    }
+  }
+
+  // btn
+  .v-btn {
+    text-transform: none;
+  }
+
+  // VMenu custom style
+  .v-menu.v-overlay {
+    .v-overlay__content {
+      .v-list {
+        .v-list-item {
+          border-radius: 0.375rem !important;
+          margin-block: 0.25rem;
+          margin-inline: 0.5rem;
+          min-block-size: 2.25rem;
+          padding-inline: 0.75rem;
+
+          &:first-child {
+            margin-block-start: 0;
+          }
+
+          &:last-child {
+            margin-block-end: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // v-field
+  .v-field:hover .v-field__outline {
+    --v-field-border-opacity: var(--v-medium-emphasis-opacity) !important;
+  }
+
+  // Card
+  .v-card-text {
+    & + & {
+      padding-block-start: 0 !important;
+    }
+  }
+
+  .v-card--variant-outlined,
+  .v-list-item--variant-outlined {
+    border-color: rgba(var(--v-border-color), var(--v-border-opacity));
+  }
+
+  // container
+  .v-container {
+    padding: 20px;
+  }
+
+  // Expansion Panel
+  .v-expansion-panels {
+    .v-expansion-panel-title {
+      font-weight: 500;
+
+      .v-expansion-panel-title__overlay {
+        opacity: 0 !important;
+      }
+    }
+
+    &:not(.v-expansion-panels--variant-accordion) {
+      .v-expansion-panel:not(.v-expansion-panel--active) .v-expansion-panel__shadow {
+        @include elevation.elevation(3);
+      }
+
+      .v-expansion-panel.v-expansion-panel--active .v-expansion-panel__shadow {
+        @include elevation.elevation(6);
+      }
+    }
+
+    /* stylelint-disable-next-line no-descending-specificity */
+    &.v-expansion-panels--variant-accordion .v-expansion-panel__shadow {
+      @include elevation.elevation(3);
+    }
+  }
+
+  // pagination
+  .v-pagination {
+    .v-pagination__item {
+      .v-btn {
+        font-weight: 400;
+      }
+    }
+  }
+
+  // stepper
+  .v-stepper.v-sheet {
+    border-radius: 10px !important;
+
+    // @include elevation.elevation(2, true);
+
+    .v-stepper-header {
+      box-shadow: none !important;
+
+      .v-stepper-item {
+        .v-stepper-item__avatar {
+          block-size: 30px !important;
+          inline-size: 30px !important;
+
+          .v-icon {
+            font-size: 1.125rem !important;
+          }
+        }
+
+        &.v-stepper-item--selected {
+          .v-stepper-item__avatar {
+            @include elevation.elevation(2, true);
+          }
+        }
+
+        &:not(.v-stepper-item--selected) {
+          .v-stepper-item__avatar {
+            background-color: rgba(var(--v-theme-on-surface), var(--v-hover-opacity));
+            color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity));
+          }
+        }
+
+        .v-stepper-item__content {
+          .v-stepper-item__title {
+            font-size: 0.875rem;
+          }
+        }
+      }
+
+      .v-divider {
+        margin-inline: -0.5rem;
+      }
+    }
+  }
+
+  .v-stepper-window {
+    padding: 1.5rem;
+    margin: 0 !important;
+  }
+
+  // v-window
+  .v-window:not(.v-stepper-window) {
+    margin-block: -2rem;
+    padding-block: 2rem;
+  }
+
+  // carousel
+  .v-carousel {
+    .v-carousel__controls {
+      color: rgba(var(--v-theme-on-surface), var(--v-disabled-opacity));
+    }
+  }
+
+  // 👉 Overlay
+  .v-overlay__scrim,
+  .v-navigation-drawer__scrim {
+    background: rgba(var(--v-overlay-scrim-background), var(--v-overlay-scrim-opacity)) !important;
+    opacity: 1 !important;
+  }
+
+  // Datatable header
+  .v-table {
+    font-size: 0.875rem;
+
+    .v-checkbox-btn {
+      font-size: 1rem;
+    }
+
+    thead {
+      th {
+        background-color: rgba(var(--v-table-header-color), 0.1) !important;
+        border-block-end: 0 !important;
+        box-shadow: none !important;
+        color: rgba(var(--v-theme-on-surface), var(--v-high-emphasis-opacity)) !important;
+        font-size: 0.875rem;
+
+        .v-checkbox-btn {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &.table-borderless {
+      th,
+      td {
+        border-block-end: 0 !important;
+      }
+    }
+
+    .v-data-table-footer {
+      justify-content: unset;
+      font-size: 0.875rem;
+
+      .v-data-table-footer__items-per-page {
+        margin-inline-end: auto;
+      }
+
+      .v-data-table-footer__pagination {
+        .v-btn--icon.v-btn--density-default {
+          --v-btn-height: 1.5rem !important;
+        }
+      }
+    }
+  }
+
+  // label
+  .v-label {
+    opacity: var(--v-high-emphasis-opacity);
+  }
+
+  // Tabs
+  .v-tabs {
+    .v-tab {
+      .v-btn__overlay {
+        opacity: 0 !important;
+      }
+
+      .v-ripple__container {
+        display: none;
+      }
+    }
+  }
+
+  // slider
+  .v-slider-thumb__label {
+    color: #fff !important;
+  }
+
+  // browser scrollbar
+
+  /* For Webkit browsers (Chrome, Safari, Opera) */
+  ::-webkit-scrollbar {
+    block-size: 3px; /* Adjust the height as per your preference */
+    inline-size: 3px; /* Adjust the width as per your preference */
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Background color of the scrollbar track */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--v-scrollbar-thumb)); /* Color of the scrollbar thumb */
+  }
+
+  /* For Firefox */
+
+  /* Note: Firefox supports a different set of properties */
+
+  /* To adjust the width and height of the scrollbar */
+  .scrollbar {
+    -ms-overflow-style: thin; /* You can use "auto" or "thin" */
+    scrollbar-color: rgb(var(--v-scrollbar-thumb)) transparent; /* Color of the thumb and track */
+    scrollbar-width: thin; /* You can use "auto" or "thin" */
+  }
+
+  // custom label and icon style
+  .custom-label {
+    position: relative;
+    block-size: 60px;
+    cursor: pointer;
+    inline-size: 100%;
+    opacity: 1;
+
+    &.active {
+      .active-icon {
+        position: absolute;
+        margin: auto;
+        color: #fff;
+        inset-inline: 0;
+      }
+    }
+
+    .custom-label-icon {
+      position: absolute;
+      margin: auto;
+      inset-inline: 0;
+    }
+
+    .v-selection-control__input,
+    .v-input {
+      opacity: 0;
+    }
+  }
+
+  // v-divider
+  .v-divider {
+    color: rgb(var(--v-border-color));
+  }
+
+  // list
+  .v-list-item:not(.v-list-item--active) .v-list-item-subtitle {
+    color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity));
+    opacity: 1;
+  }
+}
+
+// a tag and router-link
+a {
+  color: rgb(var(--v-theme-primary));
+  text-decoration: none;
+}

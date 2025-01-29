@@ -1,0 +1,100 @@
+@use "@styles/mixin/mixin";
+
+.v-theme-skins-default {
+  // navbar
+  .layout-navbar {
+    overflow: visible;
+    box-shadow: none !important;
+    padding-block-start: 16px;
+
+    .v-toolbar__content {
+      border-radius: 8px;
+    }
+  }
+
+  // footer
+  .v-footer .v-footer-content {
+    border-radius: 8px;
+    padding-block: 0.8rem;
+  }
+
+  // main content
+  .layout-page-content {
+    &:not(.with-horizontal-nav) {
+      padding-block-start: 81px !important;
+    }
+
+    .layout-page-content-wrapper {
+      block-size: calc(100% - 75px);
+    }
+  }
+
+  // vertical nav
+  .layout-vertical-nav {
+    border-width: 0;
+  }
+
+  // common style
+  .layout-vertical-nav,
+  .layout-navbar .v-toolbar__content,
+  .v-footer .v-footer-content {
+    background-color: rgb(var(--v-theme-surface)) !important;
+
+    @include mixin.elevation(2, true);
+  }
+
+  // horizontal
+  &.v-theme-horizontal-nav {
+    .layout-navbar,
+    .layout-horizontal-nav {
+      background-color: rgb(var(--v-theme-surface)) !important;
+
+      .v-toolbar__content {
+        box-shadow: none !important;
+      }
+    }
+
+    .layout-horizontal-nav {
+      @include mixin.elevation(2, true);
+
+      border-block-end: none;
+
+      .horizontal-nav > .nav-item.active {
+        background:
+          linear-gradient(
+            72.47deg,
+            rgb(var(--v-theme-primary)) 22.16%,
+            rgba(var(--v-theme-primary), 0.7) 76.47%
+          ) !important;
+
+        @include mixin.elevation(2, true);
+
+        .v-btn__content,
+        .v-btn__append {
+          color: rgb(var(--v-theme-on-primary)) !important;
+        }
+      }
+    }
+  }
+
+  // vertical only
+  &.v-theme-vertical-nav {
+    // navbar
+    .layout-navbar {
+      padding-inline: 1.25rem;
+    }
+  }
+}
+
+@media (width >= 1280px) {
+  .v-application-box-layout.v-theme-skins-default {
+    --box-layout-width: 1401px;
+
+    &.v-theme-horizontal-nav {
+      .layout-horizontal-nav,
+      .layout-navbar {
+        --box-layout-width: 1440px;
+      }
+    }
+  }
+}

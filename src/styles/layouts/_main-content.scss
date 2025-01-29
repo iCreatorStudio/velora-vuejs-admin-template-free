@@ -1,0 +1,15 @@
+.layout-page-content {
+  .layout-page-content-wrapper {
+    block-size: calc(100% - 52px);
+  }
+}
+
+// Footer
+.v-footer {
+  background-color: rgb(var(--v-theme-background));
+
+  .v-footer-content {
+    inline-size: 100%;
+    padding-inline: 1.2rem;
+  }
+}

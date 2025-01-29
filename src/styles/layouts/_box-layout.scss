@@ -1,0 +1,19 @@
+// Navbar box layout
+.v-application-box-layout {
+  --box-layout-width: 100%;
+
+  .layout-navbar .v-toolbar__content,
+  .layout-horizontal-nav .horizontal-nav,
+  .v-footer .v-footer-content {
+    margin: auto;
+    inline-size: 100%;
+    max-inline-size: var(--box-layout-width);
+  }
+}
+
+// box layout
+@media (width >= 1280px) {
+  .v-application-box-layout {
+    --box-layout-width: 1440px;
+  }
+}

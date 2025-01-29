@@ -1,0 +1,13 @@
+// Layout
+@use "layouts/box-layout";
+@use "layouts/vertical-nav";
+@use "layouts/navbar";
+
+// main content
+@use "layouts/main-content";
+
+// utilities
+@use "utilities";
+
+// libs
+@use "libs/perfect-scrollbar";
