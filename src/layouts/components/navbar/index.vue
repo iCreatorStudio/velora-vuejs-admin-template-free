@@ -30,6 +30,13 @@ const emit = defineEmits<Emit>()
 
       <VSpacer />
 
+      <VBtn
+        rel="noopener noreferrer"
+        href="https://github.com/iCreatorStudio/velora-vuejs-admin-template-free"
+        target="_blank"
+        icon="mdi-github"
+      />
+
       <VBtn icon="bx-bell" />
 
       <!-- ThemeSwitcher -->
