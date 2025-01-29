@@ -1,10 +1,6 @@
 <p align="center"></p>
 
-<p align="center">
-   <a href="https://icreatorstudio.com/product/velora-free-vuejs-admin-template" target="_blank">
-      <img src="https://github.com/user-attachments/assets/1fcfda61-04c6-4719-aea6-36e2f31b70b2" alt="velora-logo" width="60px" height="auto">
-   </a>
-</p>
+<kbd>[![Velora – Vuetify Vuejs Admin Template Demo Screenshot](https://github.com/user-attachments/assets/8e840c36-40b2-431f-bed3-7f0e8b5a1733)](https://icreatorstudio.com/product/velora-free-vuejs-admin-template)</kbd>
 
 <h1 align="center">
    <a href="https://icreatorstudio.com/product/velora-free-vuejs-admin-template" target="_blank" align="center">
@@ -14,7 +10,7 @@
 
 <p align="center">Production Ready, Carefully Crafted, Extensive Vuetify Admin Template</p>
 
-<kbd>[![Velora – Vuetify Vuejs Admin Template Demo Screenshot](https://github.com/user-attachments/assets/8e840c36-40b2-431f-bed3-7f0e8b5a1733)](https://icreatorstudio.com/product/velora-free-vuejs-admin-template)</kbd>
+
 
 ## Introduction 🚀
 
@@ -30,11 +26,11 @@ If you're a developer looking for an admin dashboard that is developer-friendly,
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 - 🦾 TypeScript & JavaScript versions
 
-[View Demo](https://demos.themeselection.com/velora-vuetify-vuejs-admin-template-free/demo/dashboard)
+[View Demo](https://demos.icreatorstudio.com/velora-vuejs-vuetify-admin-template-free/)
 
 ## Installation ⚒️
 
-Please [visit](https://demos.themeselection.com/velora-vuetify-vuejs-admin-template/documentation/guide/installation.html) our docs for the installation guide.
+Please [visit](https://docs.icreatorstudio.com/velora-vuejs-vuetify-admin-template-docs/guide/introduction.html) our docs for the installation guide.
 
 ## What's Included 📦
 
