@@ -12,11 +12,11 @@
 
 ## Introduction 🚀
 
-If you're a developer looking for an admin dashboard that is developer-friendly, rich with features, and highly customizable look no further than Velora. We've followed the highest industry standards to bring you the very best [VueJS Admin Template](https://themeselection.com/item/category/vuejs-admin-templates/) that is not only fast and easy to use but highly scalable. With ultimate convenience and flexibility, you can build any application you want with minimal hassle.
+If you're a developer in search of a user-friendly, feature-rich, and highly customizable admin dashboard, look no further than Velora. We adhere to the highest industry standards to provide you with the best [VueJS Admin Template](https://icreatorstudio.com/#products), which is not only fast and easy to use but also highly scalable. With ultimate convenience and flexibility, you can create any application you desire with minimal hassle.
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite) & [Vuetify 3](https://next.vuetifyjs.com/en/) - Uses the latest Vuetify 3
 - 📦 [Components auto importing](https://github.com/antfu/unplugin-vue-components)
-- 📑 [Layout system](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
+- 📑 **Default** and **Blank** Layout system
 - 😃 Use icons from any icon sets with classes by [Iconify](https://iconify.design/)
 - 🔥 Use the [`<script setup>`](https://vuejs.org/api/sfc-script-setup.html) syntax
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
